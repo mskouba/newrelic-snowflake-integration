@@ -24,9 +24,9 @@ A New Relic integration with Snowflake to monitor query performance, logins, pot
 - `NEWRELIC_SNOWFLAKE_HOME` - the directory where you installed this integration i.e. `/home/user/newrelic-snowflake-integration`
 - `SNOWSQL_ACCOUNT` - your snowflake account name
   - for example for Azure snowflake instance ab123.west-europe.azure
-- `SNOWSQL_USER` - your snowflake username (used for logging into the account)
-- `SNOWSQL_PWD` - your snowflake password
-- `SNOWSQL_ROLE` - snowflake role that should be used when querying (must have access to account_usage and information_schema)
+- `NR_SNOWSQL_USER` - your snowflake username (used for logging into the account)
+- `NR_SNOWSQL_PWD` - your snowflake password
+- `NR_SNOWSQL_ROLE` - snowflake role that should be used when querying (must have access to account_usage and information_schema)
 
 For example on Mac OS/Linux do `export SNOWSQL_ACCOUNT=ab123.west-europe.azure`
 On Windows, set System Environment variables via the Control Panel or from an Administrator command prompt (`setx /m SNOWSQL_ACCOUNT ab123.west-europe.azure`).
