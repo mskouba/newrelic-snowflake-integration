@@ -4,9 +4,9 @@ const fs = require('fs');
 const sqlFileName = process.argv[2];
 
 const account = process.env.SNOWSQL_ACCOUNT;
-const user = process.env.SNOWSQL_USER;
-const password = process.env.SNOWSQL_PWD;
-const role = process.env.SNOWSQL_ROLE || "accountadmin";
+const user = process.env.NR_SNOWSQL_USER;
+const password = process.env.NR_SNOWSQL_PWD;
+const role = process.env.NR_SNOWSQL_ROLE || "accountadmin";
 
 const isDate = (date) => {
   return (new Date(date) !== "Invalid Date") && !isNaN(new Date(date));
